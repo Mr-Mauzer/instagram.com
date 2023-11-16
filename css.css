@@ -1,0 +1,308 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.pict {
+  width: 380px;
+  height: 580px;
+}
+
+main {
+  margin: 25px auto;
+  display: flex;
+}
+
+.pole {
+  width: 350px;
+  height: 398px;
+  border: solid rgb(225, 225, 225) 1px;
+  margin-top: 5%;
+  margin-left: 25px;
+  text-align: center;
+  justify-content: center;
+}
+
+.pict2 {
+  height: 90px;
+  width: 170px;
+}
+
+.inp {
+  display: flex;
+  border: solid rgb(225, 225, 225) 1.5px;
+  width: 250px;
+  height: 35px;
+  border-radius: 3px;
+  padding-left: 9px;
+  /* background-color: rgb(169, 169, 169); */
+}
+
+.inp::placeholder {
+  color: rgb(134, 134, 134);
+  font-size: smaller;
+}
+
+.inp:focus {
+  outline: none;
+}
+
+.inp2 {
+  display: flex;
+  border: solid rgb(225, 225, 225) 1.5px;
+  width: 250px;
+  height: 35px;
+  border-radius: 3px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  padding-left: 9px;
+  /* background-color: rgb(169, 169, 169); */
+}
+
+.inp2::placeholder {
+  color: rgb(134, 134, 134);
+  font-size: smaller;
+}
+
+.inp2:focus {
+  outline: none;
+}
+
+.first_button {
+  width: 252px;
+  height: 32px;
+  border: solid rgb(225, 225, 225) 0px;
+  color: #fff;
+  background-color: #0095f6;
+  border-radius: 8px;
+  opacity: 70%;
+  /* margin-top: 5px; */
+}
+
+.first_button:hover {
+  background-color: #0083f6;
+}
+
+.delitel {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.first_hr {
+  width: 100px;
+  height: 0px;
+  display: flex;
+}
+
+.second_hr {
+  width: 100px;
+  height: 0px;
+  display: flex;
+  margin-left: 5%;
+}
+
+.first_p {
+  margin-left: 5%;
+  color: #737373;
+}
+
+.face {
+  display: flex;
+  align-items: center;
+  color: #385185;
+  margin-top: 25px;
+}
+
+.second_p {
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+.facebook {
+  width: 15px;
+  height: 15px;
+}
+
+.third_p {
+  font-size: 11px;
+  color: #00376b;
+  margin: 20px;
+}
+
+.pole2 {
+  width: 350px;
+  height: 60px;
+  margin-top: 10px;
+  border: solid rgb(225, 225, 225) 1px;
+  margin-left: 25px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.fourth_p {
+  color: #000000;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fiveth_p {
+  color: #0095f6;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5px;
+}
+
+.app {
+  text-align: center;
+  padding-top: 5%;
+  margin-left: 20px;
+}
+
+.sad {
+  color: #000000;
+  font-size: 14px;
+}
+
+.googl {
+  width: 130px;
+  height: 40px;
+  margin-right: 5px;
+}
+
+.micro {
+  width: 110px;
+  height: 42px;
+}
+
+@media (max-width: 768px) {
+  .pic {
+    display: none;
+  }
+
+  .pole {
+    margin-left: 0px;
+  }
+
+  .pole2 {
+    margin-left: 0px;
+  }
+
+  .app {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 390px) {
+  .pic {
+    display: none;
+  }
+
+  .pole {
+    margin-left: 0px;
+    border: none;
+    margin-top: 0px;
+  }
+
+  .pole2 {
+    margin-left: 0px;
+    border: none;
+    margin-top: 0px;
+  }
+
+  .app {
+    margin-left: 0px;
+    border: none;
+  }
+}
+
+/* .words {
+  display: flex;
+  gap: 15px;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  align-items: center;
+} */
+
+.qqq {
+  display: flex;
+  gap: 15px;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.odsa {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #737373;
+  align-items: center;
+}
+
+.ee {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.Verified {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #737373;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.ss {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 5px;
+}
+
+.enss {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #737373;
+  align-items: center;
+}
+
+.asad {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #737373;
+  align-items: center;
+  transform: rotate(90deg);
+}
+
+.ds {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #737373;
+  align-items: center;
+}

